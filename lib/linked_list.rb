@@ -40,6 +40,8 @@ class LinkedList
     counter
   end
 
+  # should return the value of the first node in the list
+  # if the list is empty, it should return nil
   def head
     _head ? _head.value : nil
   end
@@ -47,7 +49,7 @@ class LinkedList
   # should return the value of the final node in the list
   # if the list is empty, it should return nil
   def tail
-    return unless _head
+    return nil unless _head
 
     tmp = _head
     tmp = tmp.next_node while tmp.next_node
