@@ -15,6 +15,16 @@ class LinkedList
       self.head = Node.new(value)
     end
   end
+
+  # adds a new node containing value to the start of the list
+  def prepend(value)
+    if head
+      prev_head = head
+      self.head = Node.new(value, prev_head)
+    else
+      self.head = Node.new(value)
+    end
+  end
 end
 
 class Node
