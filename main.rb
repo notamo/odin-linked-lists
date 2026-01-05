@@ -1,14 +1,13 @@
 require_relative 'lib/linked_list'
+require_relative 'lib/node'
 
 list = LinkedList.new
 list.append(3)
 list.append(1)
 list.prepend(7)
-p list.size
+puts "list.size=#{list.size}"
 p list
 
-puts '---'
-
 list2 = LinkedList.new
-p list2.size
+puts "list2.size=#{list2.size}"
 p list2
