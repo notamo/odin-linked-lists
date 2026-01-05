@@ -25,6 +25,20 @@ class LinkedList
       self.head = Node.new(value)
     end
   end
+
+  # returns the total number of nodes in the list
+  def size
+    return 0 unless head
+
+    counter = 1
+    tmp = head
+    while tmp.next_node
+      tmp = tmp.next_node
+      counter += 1
+    end
+
+    counter
+  end
 end
 
 class Node
