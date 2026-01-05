@@ -9,6 +9,11 @@ p list
 puts "list.size=#{list.size}"
 puts "list.head=#{list.head.inspect}"
 puts "list.tail=#{list.tail.inspect}"
+puts "list.at(-1)=#{list.at(-1).inspect}"
+puts "list.at(0)=#{list.at(0).inspect}"
+puts "list.at(1)=#{list.at(1).inspect}"
+puts "list.at(2)=#{list.at(2).inspect}"
+puts "list.at(3)=#{list.at(3).inspect}"
 
 puts
 
@@ -17,3 +22,4 @@ p list2
 puts "list2.size=#{list2.size}"
 puts "list2.head=#{list2.head.inspect}"
 puts "list2.tail=#{list2.tail.inspect}"
+puts "list2.at(0)=#{list2.at(0).inspect}"

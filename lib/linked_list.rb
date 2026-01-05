@@ -55,4 +55,20 @@ class LinkedList
     tmp = tmp.next_node while tmp.next_node
     tmp.value
   end
+
+  # should return the value of the node at the given index
+  # if there’s no node at the given index, it should return nil
+  def at(index)
+    return nil unless _head
+    return head if index.zero?
+
+    idx = 0
+    tmp = _head
+    while tmp.next_node
+      tmp = tmp.next_node
+      idx += 1
+      return tmp.value if index == idx
+    end
+    nil
+  end
 end
