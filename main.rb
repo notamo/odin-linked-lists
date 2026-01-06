@@ -14,6 +14,8 @@ puts "list.at(0)=#{list.at(0).inspect}"
 puts "list.at(1)=#{list.at(1).inspect}"
 puts "list.at(2)=#{list.at(2).inspect}"
 puts "list.at(3)=#{list.at(3).inspect}"
+puts "list.pop=#{list.pop}"
+p list
 
 puts
 

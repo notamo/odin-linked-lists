@@ -71,4 +71,14 @@ class LinkedList
     end
     nil
   end
+
+  # should remove the head node from the list and return that node’s value
+  # if called on an empty list, it should just return nil
+  def pop
+    return nil unless _head
+
+    tmp = _head
+    self._head = _head.next_node
+    tmp.value
+  end
 end
