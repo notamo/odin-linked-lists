@@ -81,4 +81,16 @@ class LinkedList
     self._head = _head.next_node
     tmp.value
   end
+
+  # returns true if the passed in value is in the list and otherwise returns false
+  def contains?(value)
+    return true if _head.value == value
+
+    tmp = _head
+    while tmp.next_node
+      tmp = tmp.next_node
+      return true if tmp.value == value
+    end
+    false
+  end
 end

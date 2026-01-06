@@ -25,3 +25,8 @@ puts "list2.size=#{list2.size}"
 puts "list2.head=#{list2.head.inspect}"
 puts "list2.tail=#{list2.tail.inspect}"
 puts "list2.at(0)=#{list2.at(0).inspect}"
+list2.append('rabbit')
+list2.append('dog')
+list2.append('cat')
+p list2.contains?('fish')
+p list2.contains?('cat')
