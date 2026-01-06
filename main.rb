@@ -34,3 +34,12 @@ p list2.contains?('cat')
 p list2.index('rabbit')
 p list2.index('dog')
 p list2.index('cat')
+
+list3 = LinkedList.new
+list3.append('dog')
+list3.append('cat')
+list3.append('parrot')
+list3.append('hamster')
+list3.append('snake')
+list3.append('turtle')
+puts list3

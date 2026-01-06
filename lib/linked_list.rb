@@ -110,4 +110,16 @@ class LinkedList
     end
     nil
   end
+
+  def to_s
+    return '' unless _head
+
+    tmp = _head
+    ret = "( #{tmp.value} ) -> "
+    while tmp.next_node
+      tmp = tmp.next_node
+      ret += "( #{tmp.value} ) -> "
+    end
+    ret + 'nil'
+  end
 end
