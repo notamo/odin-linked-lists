@@ -93,4 +93,21 @@ class LinkedList
     end
     false
   end
+
+  # returns the index of the node containing the value
+  # - if the value isn’t found, it should return nil
+  # - if more than one node has a value matching the given value,
+  #   it should return the index of the first node with the matching value
+  def index(value)
+    return 0 if _head.value == value
+
+    tmp = _head
+    idx = 0
+    while tmp.next_node
+      tmp = tmp.next_node
+      idx += 1
+      return idx if tmp.value == value
+    end
+    nil
+  end
 end
